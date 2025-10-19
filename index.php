@@ -4,9 +4,7 @@
  * Welcome page with system overview and quick access
  */
 
-require_once 'includes/session.php';
-require_once 'config/database.php';
-require_once 'classes/RoleManager.php';
+require_once 'includes/config.php';
 
 // Redirect logged-in users to their dashboard
 if (isLoggedIn()) {
