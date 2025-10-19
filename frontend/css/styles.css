@@ -1,0 +1,134 @@
+/* Custom CSS for Medical Appointment System */
+/* This file will contain extracted CSS from header.php */
+
+:root {
+    --primary-color: #2c5aa0;
+    --secondary-color: #f8f9fa;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--primary-color) !important;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.1);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #1e3d6f;
+    border-color: #1e3d6f;
+}
+
+.alert {
+    border-radius: 8px;
+    border: none;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(44, 90, 160, 0.25);
+}
+
+.sidebar {
+    background-color: #fff;
+    border-right: 1px solid #dee2e6;
+    min-height: calc(100vh - 76px);
+}
+
+.sidebar .nav-link {
+    color: #495057;
+    padding: 12px 20px;
+    border-radius: 0;
+}
+
+.sidebar .nav-link:hover, .sidebar .nav-link.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.status-badge {
+    font-size: 0.8em;
+    padding: 4px 8px;
+}
+
+.appointment-card {
+    transition: transform 0.2s;
+}
+
+.appointment-card:hover {
+    transform: translateY(-2px);
+}
+
+.footer {
+    background-color: #fff;
+    border-top: 1px solid #dee2e6;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        min-height: auto;
+    }
+    
+    .main-content {
+        padding: 15px;
+    }
+}
+
+/* Landing Page Styles */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #1e3d6f 100%);
+    min-height: 80vh;
+}
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+.fa-10x {
+    font-size: 10rem;
+}
+
+.demo-account {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.demo-account:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .feature-icon {
+    transform: scale(1.1);
+}
